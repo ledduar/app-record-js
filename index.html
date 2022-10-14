@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tus propias conversaciones.</title>
+
+    <!-- CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Crea tus propias conversaciones.</h1>
+    </header>
+    <section id="languages">
+        <div class="container-options">
+            <div>
+                <h3>Seleccione una voz</h3>
+                <select name="optionVoices" id="optionVoices"></select>
+            </div>
+            <div id="models" class="d-none">
+                <h3>Modelos <small>(Microsoft Edge Browser)</small></h3>
+                <button model="model-english-man" class="btn-voice-en">Inglés Hombres</button>
+                <button model="model-english-woman" class="btn-voice-en">Inglés Mujeres</button>
+                <button model="model-spanish-man" class="btn-voice-es">Español Hombres</button>
+                <button model="model-spanish-woman" class="btn-voice-es">Español Mujeres</button>
+                <button model="clear-models" class="btn-delete">Limpiar</button>
+            </div>
+        </div>
+        <h3>Voces seleccionadas</h3>
+        <div id="containerVoices"></div>
+    </section>
+    <section>
+        <h2>Contenido</h2>
+        <ul id="contenido" class="contenido"></ul>
+    </section>
+    <div class="div-play-stop">
+        <button class="btn-play">PLAY</button>
+        <button class="btn-stop">STOP</button>
+    </div>
+    <script src="./app.js" type="module"></script>
+    <script src="./data/content.js" type="module"></script>
+    <script src="./data/voices.js" type="module"></script>
+    <link rel="stylesheet" href="./app.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+</body>
+
+</html>

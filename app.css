@@ -1,0 +1,308 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray: rgb(70, 70, 70);
+  --color-red: rgb(255, 0, 0);
+  --color-red-hover: rgba(255, 0, 0, 0.75);
+  --color-green: rgb(0, 173, 14);
+  --color-voice: rgb(115, 114, 114);
+  --color-voice-en: rgb(0, 109, 173);
+  --color-voice-es: rgb(247, 129, 2);
+}
+
+body {
+  margin: 10px !important;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+header {
+  text-align: center;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+h3 {
+  font-weight: 500;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.container-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+
+select {
+  width: 100%;
+  border: solid 1px var(--color-gray);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.contenido li.over .textarea {
+  box-shadow: 4px 4px 1px 1px rgb(0 0 0 / 25%);
+}
+
+.element-text {
+  margin: 10px 0;
+  display: grid;
+  align-items: center;
+}
+
+.element-text .text-content {
+  display: flex;
+  align-items: center;
+}
+
+.element-text .options {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.element-text .voices {
+  margin-left: 6rem;
+  font-size: 10px;
+}
+
+.element-text label {
+  margin-right: 10px;
+}
+
+.element-text textarea {
+  padding: 2px 10px;
+  width: 60%;
+  border: solid 1px rgb(70, 70, 70);
+  border-radius: 10px;
+}
+
+.btn-delete {
+  margin: 2px 4px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--color-red);
+  border: solid 2px var(--color-red);
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  color: var(--color-red);
+  border: solid 2px var(--color-red);
+  background-color: var(--color-white);
+}
+
+.btn-rate {
+  width: 20px;
+  margin: 1px 1px;
+  padding: 0px 5px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--color-gray);
+}
+
+.btn-rate:hover {
+  cursor: pointer;
+}
+
+.btn-repeat {
+  width: 20px;
+  margin: 1px 1px;
+  padding: 0px 5px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--color-green);
+}
+
+.btn-repeat:hover {
+  cursor: pointer;
+}
+
+.btn-play {
+  margin: 2px 4px;
+  padding: 4px 16px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--color-green);
+  border: solid 2px var(--color-green);
+}
+
+.btn-play:hover {
+  cursor: pointer;
+  color: var(--color-green);
+  border: solid 2px var(--color-green);
+  background-color: var(--color-white);
+}
+
+.btn-stop {
+  margin: 2px 4px;
+  padding: 4px 16px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--color-red);
+  border: solid 2px var(--color-red);
+}
+
+.btn-stop:hover {
+  cursor: pointer;
+  color: var(--color-red);
+  border: solid 2px var(--color-red);
+  background-color: var(--color-white);
+}
+
+.btn-play-none {
+  margin: 2px 4px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--color-voice);
+  border: solid 2px var(--color-voice);
+}
+
+.btn-play-none:hover {
+  cursor: pointer;
+  color: var(--color-voice);
+  border: solid 2px var(--color-voice);
+  background-color: var(--color-white);
+}
+
+.btn-play-en {
+  margin: 2px 4px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--color-voice-en);
+  border: solid 2px var(--color-voice-en);
+}
+
+.btn-play-en:hover {
+  cursor: pointer;
+  color: var(--color-voice-en);
+  border: solid 2px var(--color-voice-en);
+  background-color: var(--color-white);
+}
+
+.btn-play-es {
+  margin: 2px 4px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--color-voice-es);
+  border: solid 2px var(--color-voice-es);
+}
+
+.btn-play-es:hover {
+  cursor: pointer;
+  color: var(--color-voice-es);
+  border: solid 2px var(--color-voice-es);
+  background-color: var(--color-white);
+}
+
+.btn-voice {
+  margin: 2px 4px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--color-voice);
+  border: solid 2px var(--color-voice);
+}
+
+.btn-voice:hover {
+  cursor: pointer;
+  color: var(--color-voice);
+  border: solid 2px var(--color-voice);
+  background-color: var(--color-white);
+}
+
+.btn-voice-en {
+  margin: 2px 4px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--color-voice-en);
+  border: solid 2px var(--color-voice-en);
+}
+
+.btn-voice-en:hover {
+  cursor: pointer;
+  color: var(--color-voice-en);
+  border: solid 2px var(--color-voice-en);
+  background-color: var(--color-white);
+}
+
+.btn-voice-es {
+  margin: 2px 4px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--color-voice-es);
+  border: solid 2px var(--color-voice-es);
+}
+
+.btn-voice-es:hover {
+  cursor: pointer;
+  color: var(--color-voice-es);
+  border: solid 2px var(--color-voice-es);
+  background-color: var(--color-white);
+}
+
+.drag-drop-icon:hover > hr {
+  border-top: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  margin: 2px 5px;
+  width: 20px;
+  border-top: 3px solid #000;
+}
+
+.div-play-stop {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 8rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  padding: 0 0.7rem;
+  background-color: var(--color-gray);
+  border-radius: 1rem;
+  flex-direction: column;
+}
