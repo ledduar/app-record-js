@@ -41,7 +41,6 @@ function detectBrowser() {
 
 // Habilita el Drag and Drop de los textos
 function startDragDrop() {
-    console.log('startDragDrop')
     const dragListItems = document.querySelectorAll('li');
     dragListItems.forEach(item => {
         item.addEventListener('dragstart', dragStart);
@@ -54,7 +53,6 @@ function startDragDrop() {
 
 function dragStart() {
     dragStartIndex = + this.getAttribute('data-index');
-    console.log('dragStart', dragStartIndex);
 }
 
 function dragEnter() {
@@ -72,7 +70,6 @@ function dragOver(e) {
 function dragDrop() {
     this.classList.remove('over');
     const dragEndIndex = + this.getAttribute('data-index');
-    console.log('dragDrop', dragEndIndex);
 
     const textsLocalStorage = JSON.parse(localStorage.getItem('texts')) || [];
     const previousTexts = [...textsLocalStorage];
@@ -219,7 +216,6 @@ function addElementText(e) {
             currentInputText.color = 'none'
         }
         inputText = [...inputText, currentInputText];
-        console.log(inputText)
         localStorage.setItem('texts', JSON.stringify(inputText));
         fillElementText();
     }
@@ -288,11 +284,9 @@ function functionsContent(e) {
 
 // Reproduce el texto
 function playText(e) {
-    console.log('playText')
     speechSynthesis.cancel();
     const btnPlay = e.target;
     const textArea = btnPlay.nextElementSibling;
-    console.log(textArea)
     const text = textArea.value;
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = Number(textArea.getAttribute('rate'));
@@ -344,9 +338,7 @@ function updateText(e) {
 
 // Cambia la velocidad del audio
 function changeRate(e) {
-    console.log('changeRate')
     const { targetDOM, date, textsLocalStorage } = getTextsLocalStorage(e);
-    console.log(textsLocalStorage)
     textsLocalStorage.forEach(element => {
         if (element.date === date) {
             if (targetDOM.classList.contains('more')) {
@@ -364,7 +356,6 @@ function changeRate(e) {
 }
 
 function changeRepeat(e) {
-    console.log('changeRepeat')
     const { targetDOM, date, textsLocalStorage } = getTextsLocalStorage(e);
     textsLocalStorage.forEach(element => {
         if (element.date === date) {
