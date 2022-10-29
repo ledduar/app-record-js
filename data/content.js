@@ -117,6 +117,26 @@ export const englishMan = [
         "rate": 0.8,
         "repeat": 1,
         "name": "Microsoft Lorenzo Online (Natural) - Spanish (Chile)",
+        "text": "",
+        "color": "es"
+    },
+    {
+        "sort": 12,
+        "voiceID": 12,
+        "date": 12,
+        "rate": 0.6,
+        "repeat": 3,
+        "name": "Microsoft Christopher Online (Natural) - English (United States)",
+        "text": "",
+        "color": "en"
+    },
+    {
+        "sort": 13,
+        "voiceID": 13,
+        "date": 13,
+        "rate": 0.8,
+        "repeat": 1,
+        "name": "Microsoft Lorenzo Online (Natural) - Spanish (Chile)",
         "text": "Fin de la lección. En inglés por día, aprende inglés todos los días.",
         "color": "es"
     }
@@ -237,6 +257,26 @@ export const englishWoman = [
         "sort": 11,
         "voiceID": 11,
         "date": 11,
+        "rate": 0.8,
+        "repeat": 1,
+        "name": "Microsoft Dalia Online (Natural) - Spanish (Mexico)",
+        "text": "",
+        "color": "es"
+    },
+    {
+        "sort": 12,
+        "voiceID": 12,
+        "date": 12,
+        "rate": 0.6,
+        "repeat": 3,
+        "name": "Microsoft Clara Online (Natural) - English (Canada)",
+        "text": "",
+        "color": "en"
+    },
+    {
+        "sort": 13,
+        "voiceID": 13,
+        "date": 13,
         "rate": 0.8,
         "repeat": 1,
         "name": "Microsoft Dalia Online (Natural) - Spanish (Mexico)",
@@ -363,6 +403,26 @@ export const spanishMan = [
         "rate": 0.8,
         "repeat": 1,
         "name": "Microsoft Christopher Online (Natural) - English (United States)",
+        "text": "",
+        "color": "en"
+    },
+    {
+        "sort": 12,
+        "voiceID": 12,
+        "date": 12,
+        "rate": 0.6,
+        "repeat": 3,
+        "name": "Microsoft Lorenzo Online (Natural) - Spanish (Chile)",
+        "text": "",
+        "color": "es"
+    },
+    {
+        "sort": 13,
+        "voiceID": 13,
+        "date": 13,
+        "rate": 0.8,
+        "repeat": 1,
+        "name": "Microsoft Christopher Online (Natural) - English (United States)",
         "text": "End of the lesson.",
         "color": "en"
     }
@@ -483,6 +543,26 @@ export const spanishWoman = [
         "sort": 11,
         "voiceID": 11,
         "date": 11,
+        "rate": 0.8,
+        "repeat": 1,
+        "name": "Microsoft Clara Online (Natural) - English (Canada)",
+        "text": "",
+        "color": "en"
+    },
+    {
+        "sort": 12,
+        "voiceID": 12,
+        "date": 12,
+        "rate": 0.6,
+        "repeat": 3,
+        "name": "Microsoft Dalia Online (Natural) - Spanish (Mexico)",
+        "text": "",
+        "color": "es"
+    },
+    {
+        "sort": 13,
+        "voiceID": 13,
+        "date": 13,
         "rate": 0.8,
         "repeat": 1,
         "name": "Microsoft Clara Online (Natural) - English (Canada)",

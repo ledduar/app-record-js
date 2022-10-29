@@ -294,15 +294,15 @@ hr {
 }
 
 .div-play-stop {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 8rem;
   position: fixed;
-  bottom: 2rem;
-  right: 1rem;
-  padding: 0 0.7rem;
+  bottom: -25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.7rem 0.7rem;
   background-color: var(--color-gray);
   border-radius: 1rem;
-  flex-direction: column;
+}
+
+.seccion-contenido{
+  margin-bottom: 85px;
 }
