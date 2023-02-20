@@ -1,6 +1,13 @@
 
 // imports
-import { englishMan, englishWoman, spanishMan, spanishWoman } from "./data/content.js";
+import {
+    lecturaEnglishMan,
+    lecturaEnglishWoman,
+    lecturaSpanishMan,
+    lecturaSpanishWoman,
+    dialogoEnglishWomanMan
+} from "./data/content.js";
+
 import { voicesEdge } from "./data/voices.js";
 
 // variables
@@ -92,23 +99,26 @@ function createModel(e) {
         const model = e.target.getAttribute('model');
         switch (model) {
             case 'model-english-man':
-                data = englishMan;
+                data = lecturaEnglishMan;
                 break;
             case 'model-english-woman':
-                data = englishWoman;
+                data = lecturaEnglishWoman;
                 break;
             case 'model-spanish-man':
-                data = spanishMan;
+                data = lecturaSpanishMan;
                 break;
             case 'model-spanish-woman':
-                data = spanishWoman;
+                data = lecturaSpanishWoman;
+                break;
+            case 'model-dialogo-woman-man':
+                data = dialogoEnglishWomanMan;
                 break;
             case 'clear-models':
                 data = [];
                 voices = [];
                 break;
             default:
-                data = englishMan;
+                data = lecturaEnglishMan;
                 break;
         }
 
